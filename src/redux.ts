@@ -57,22 +57,21 @@ export abstract class ReduxLitElement<
     const mapStateToProps: IMapStateToProps = this.mapStateToProps(
       this.store.getState(),
     );
-    const mapDispatchToProps: IMapDispatchToProps = this.mapDispatchToProps(
-      this.store.dispatch as Dispatch<Action<A>>,
-    );
+    const mapDispatchToProps: IMapDispatchToProps = this.mapDispatchToProps(this
+      .store.dispatch as Dispatch<Action<A>>);
 
     Object.keys(mapStateToProps).forEach((key: string) => {
-      (this as {[props: string]: any})[key] = mapStateToProps[key];
+      (this as { [props: string]: any })[key] = mapStateToProps[key];
     });
 
     Object.keys(mapDispatchToProps).forEach((key: string) => {
-      (this as {[props: string]: any})[key] = mapDispatchToProps[key];
+      (this as { [props: string]: any })[key] = mapDispatchToProps[key];
     });
   }
 
   private updateProps(newProps: S): void {
     callOnDifferences(newProps, this, (key: string, newVal: any) => {
-      (this as {[props: string]: any})[key] = newVal;
+      (this as { [props: string]: any })[key] = newVal;
     });
   }
 }
