@@ -52,6 +52,13 @@
   dependencies:
     any-observable "^0.3.0"
 
+"@types/@polymer/lit-element":
+  version "0.5.2"
+  resolved "https://codeload.github.com/polymer/lit-element/tar.gz/2433ce376521aa8ab5272aa9c12a49ee74ac8c4e"
+  dependencies:
+    "@polymer/polymer" "^3.0.2"
+    lit-html "^0.10.2"
+
 "@types/jest@23.1.5":
   version "23.1.5"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-23.1.5.tgz#e31be003956e1fa8c860124d99bea9ae327ae37b"
@@ -59,6 +66,16 @@
 "@types/lodash@4.14.111":
   version "4.14.111"
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.111.tgz#d926250baa9526c0ffe85914dd10363068e7893a"
+
+"@types/polymer@1.2.4":
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@types/polymer/-/polymer-1.2.4.tgz#ecde90bf314e3ef3e564b68c4e7225f2483ffc76"
+  dependencies:
+    "@types/webcomponents.js" "*"
+
+"@types/webcomponents.js@*":
+  version "0.6.32"
+  resolved "https://registry.yarnpkg.com/@types/webcomponents.js/-/webcomponents.js-0.6.32.tgz#aba4bbfcb6889205aa8f8e0adec0bfc595b4f6cd"
 
 "@webcomponents/shadycss@^1.2.0":
   version "1.3.1"
@@ -3187,7 +3204,7 @@ listr@^0.14.1:
     rxjs "^6.1.0"
     strip-ansi "^3.0.1"
 
-lit-html@0.10.2, lit-html@^0.10.0:
+lit-html@0.10.2, lit-html@^0.10.0, lit-html@^0.10.2:
   version "0.10.2"
   resolved "https://registry.yarnpkg.com/lit-html/-/lit-html-0.10.2.tgz#53c846afcf91bb1e6623179ef22e327ab8ac0e0e"
 
