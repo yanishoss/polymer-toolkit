@@ -1,0 +1,64 @@
+{
+  "name": "polymer-toolkit",
+  "version": "1.0.0-alpha",
+  "description": "A toolkit for making Polymer simpler.",
+  "main": "build/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanishoss/polymer-toolkit.git"
+  },
+  "author": "Yanis HEDJEM",
+  "license": "MIT",
+  "dependencies": {
+    "@polymer/lit-element": "0.5.2",
+    "lit-html": "0.10.2",
+    "lodash": "4.17.10",
+    "redux": "4.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "23.1.5",
+    "@types/lodash": "4.14.111",
+    "babel-preset-env": "1.7.0",
+    "husky": "0.14.3",
+    "jest": "^23.4.0",
+    "lint-staged": "7.2.0",
+    "npx": "10.2.0",
+    "prettier": "1.13.7",
+    "ts-jest": "^23.0.0",
+    "tslint": "5.10.0",
+    "tslint-config-airbnb": "5.9.2",
+    "tslint-config-prettier": "1.13.0",
+    "typescript": "2.9.2"
+  },
+  "bugs": {
+    "url": "https://github.com/yanishoss/polymer-toolkit/issues"
+  },
+  "homepage": "https://github.com/yanishoss/polymer-toolkit#readme",
+  "scripts": {
+    "build": "tsc",
+    "docs": "docsify serve ./docs",
+    "format": "npm run lint && npm run prettify",
+    "lint": "tslint --fix src/**/*.ts test/**/*.ts",
+    "prettify": "prettier --write src/**/*.ts test/**/*.ts",
+    "test": "jest --passWithNoTests"
+  },
+  "lint-staged": {
+    "**/*.ts": [
+      "npx prettier",
+      "npx tslint --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsc --noEmit && lint-staged"
+    }
+  },
+  "keywords": [
+    "polymer",
+    "toolkit",
+    "webcomponents",
+    "redux",
+    "polymer-redux"
+  ]
+}
