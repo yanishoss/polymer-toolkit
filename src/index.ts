@@ -6,4 +6,4 @@ export {
   IMapStateToPropsFunc,
 } from './redux';
 
-export { register } from './register';
+    export { register } from './register';
