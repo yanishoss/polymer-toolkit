@@ -1,0 +1,9 @@
+node_modules
+src
+tests
+deprecated-tests
+.travis.yml
+tslint.json
+tsconfig.json
+.prettierrc.json
+.gitignore

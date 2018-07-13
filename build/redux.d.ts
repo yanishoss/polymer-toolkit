@@ -1,3 +1,4 @@
+import '@polymer/lit-element/custom_typings/polymer';
 import { LitElement } from '@polymer/lit-element';
 import { AnyAction, Dispatch, Store } from 'redux';
 export interface IMapStateToProps {
@@ -17,3 +18,4 @@ export declare abstract class ReduxLitElement<S, A extends AnyAction> extends Li
     private initProps;
     private updateProps;
 }
+//# sourceMappingURL=redux.d.ts.map

@@ -11,7 +11,7 @@
     // "checkJs": true,                       /* Report errors in .js files. */
     // "jsx": "preserve",                     /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */
     "declaration": true,                   /* Generates corresponding '.d.ts' file. */
-    "declarationMap": false,                /* Generates a sourcemap for each corresponding '.d.ts' file. */
+    "declarationMap": true,                /* Generates a sourcemap for each corresponding '.d.ts' file. */
     // "sourceMap": true,                     /* Generates corresponding '.map' file. */
     // "outFile": "./",                       /* Concatenate and emit output to single file. */
     "outDir": "./build",                        /* Redirect output structure to the directory. */
@@ -25,7 +25,7 @@
 
     /* Strict Type-Checking Options */
     "strict": true,                           /* Enable all strict type-checking options. */
-    "noImplicitAny": false,                  /* Raise error on expressions and declarations with an implied 'any' type. */
+    "noImplicitAny": true,                  /* Raise error on expressions and declarations with an implied 'any' type. */
     "strictNullChecks": true,              /* Enable strict null checks. */
     "strictFunctionTypes": true,           /* Enable strict checking of function types. */
     "strictPropertyInitialization": true,  /* Enable strict checking of property initialization in classes. */
@@ -61,7 +61,8 @@
     "emitDecoratorMetadata": true         /* Enables experimental support for emitting type metadata for decorators. */
   },
   "exclude": [
-    "./tests",
-    "node_modules"
+    "deprecated-tests",
+    "tests",
+    "**/*.d.ts"
   ]
 }
