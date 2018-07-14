@@ -1,4 +1,4 @@
-import '@polymer/lit-element/custom_typings/polymer';
+/// <reference path="../node_modules/@polymer/lit-element/custom_typings/polymer.d.ts" />;
 
 import { LitElement } from '@polymer/lit-element';
 import * as lodash from 'lodash';

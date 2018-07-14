@@ -1,4 +1,3 @@
-import '@polymer/lit-element/custom_typings/polymer';
 import { LitElement } from '@polymer/lit-element';
 import * as lodash from 'lodash';
 function callOnDifferences(obj1, obj2, callback, _ = lodash) {
