@@ -1,11 +1,13 @@
 import { IToolkitElement } from '.';
 
 export function open(target: IToolkitElement): void {
-  const el: HTMLElement | null = document.querySelector(target.displayName);
+  const els: NodeListOf<HTMLElement> | null = document.querySelectorAll(target.displayName);
 
-  if (el) {
-    target.prototype._createRoot = () => el.attachShadow({
-      mode: 'open',
+  if (els) {
+    Array.from(els).forEach((el: HTMLElement) => {
+      target.prototype._createRoot = () => el.attachShadow({
+        mode: 'open',
+      });
     });
   }
 }
