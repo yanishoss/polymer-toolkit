@@ -1,7 +1,7 @@
 import '@polymer/lit-element/custom_typings/polymer';
 
 import { LitElement } from '@polymer/lit-element';
-import lodash from 'lodash';
+import * as lodash from 'lodash';
 import { Action, AnyAction, Dispatch, Store } from 'redux';
 
 export interface IMapStateToProps {
