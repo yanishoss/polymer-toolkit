@@ -3,7 +3,9 @@ A toolkit for making Polymer simpler.
 
 Provides already:  
 * Redux support  
-* A decorator to register your components  
+* A decorator to register your components
+* A decorator to close the shadow DOM
+* One to open the shadow DOM  
 * Others tools not yet released...
 
 ## Install it
@@ -25,8 +27,18 @@ const exampleStore = createStore(/*Put a reducer*/);
 // It registers your component in the shadow DOM.
 // Same as: customElements.define("my-component", MyComponent);
 // But it is way prettier !
-@register("my-component")
+@register
+
+// It closes the shadow DOM.
+@close
+
+// It opens the shadow DOM.
+@open
 class MyComponent extends ReduxLitElement {
+    // Put the name of your component.
+    // Could be a getter.
+    static displayName: string = "my-component";
+
     // Put your store here.
     store = exampleStore;
     
