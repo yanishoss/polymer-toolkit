@@ -1,5 +1,5 @@
-export function register(name: string): ClassDecorator {
-  return (target: any) => {
-    customElements.define(name, target);
-  };
+import { IToolkitElement } from '.';
+
+export function register(target: IToolkitElement): void {
+  customElements.define(target.displayName, target);
 }

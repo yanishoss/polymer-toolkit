@@ -7,3 +7,9 @@ export {
 } from './redux';
 
 export { register } from './register';
+
+export { IToolkitElement } from './toolkitElement';
+
+export { open } from './open';
+
+export { close } from './close';
