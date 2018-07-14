@@ -1,5 +1,3 @@
-export function register(name) {
-    return (target) => {
-        customElements.define(name, target);
-    };
+export function register(target) {
+    customElements.define(target.displayName, target);
 }
