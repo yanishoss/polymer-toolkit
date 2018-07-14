@@ -3,16 +3,16 @@ node_js:
 - lts/*
 - node
 install: yarn
-script: 
-  - yarn prettify
-  - # yarn test -> Doesn't work due to dependencies issues.
-  - yarn build
+script:
+- yarn prettify
+- 
+- yarn build
 deploy:
   skip_cleanup: true
   provider: npm
   email: yanishproduction@gmail.com
   api_key:
-    secure: iHOlXUoqe2Hm7bIOyojTpXuRUaIg24SbydU7m3tJFrmxz38hvzzTqgAcNscEGGXq+Qxor5/VbI7f9LTJgTI3Jae3RtMq4OMwfLO1USvUa7NK/3mWTnoLPTD9axHDqo90zeDolwPa0xnyc0TOPbaMFYv67uoSLF2a0nPENWXAg+VvwUoR4kop63c8nm+dVr7lJa1ekmhg25PsFY7QmqCRs5XToddeJKN7svhtNSpy1X6juRxGQec3kfXUsQ5PhAoWw6mZc2Yai7CmvjyWS3PHMp+q+VQbj2PTtBWCWuxF8h1B3QSOwTqD28eyQYdo+43PvB0Su6oi9fwxdVdnQA5CH5knAHtyh7mc+1bw9X528uZb12jygQvrjgb+vymdqklmmtJcqZs9ZzyWDej2mQjey0k+9kBiz4epMPGcKOJyASWBRVhf3OuYJ2iJ4FODGEbACOMHTnk+qEJl8j/27Bit6hl/s6chIHXnKdaIhBVYSjqV1AoiyebrBGCqQxKygkcoquj4+E84lUMzb/Uq9gY6QQlQGUwVEfI3DuqmzI/oK+Yj1j+RKaRL9qS0JOlRrMGpo47mZiNXX3XvTd2xVTiq0zQQgoYMWv+hYvRTalp5e1E/jGNd3vxsLpUF/HSYVtT/ltjOxf9+cOWaV/tobp8TygjWy7HpvHbV2AxvFPkPxiQ=
-  on: 
+    secure: JaWxdBtA4xl6tyZQcP448lJvaGng3Xz4BWyeUaiHotjSI69XdGZLeGbYU3as7Zi3let2qtdDAChLc5AhfTtrgO21P2f2c6c/ncPprb+xb5IwQBdZn4hKXb5cBKBwjqsuH1Jp4DkEjcJuliJve0xyoqCD2oE3qXIVrmBbNYd9EuISHZVMUd+ZDnZ/HMmWTekErFlyoFnpg6Po2yMYEKq8mATPLvDM3lkq1fnNYSEK26I4csToO4apdUilFJzuWLV/2KnAnEnOfZe7ksIm/a9Rkl2h6u35p5fKno9WATbrBw6Gd2fO1I8Fku4/4S26QhnaKHGOF2iqZVghT/WiQZFSPAK13uBZAkLreKDYkQVcwA4AaxteypfNvg03b27j5quQyCWITwvqpxFLm0G/dL68irjJA8il756kQIF1YULSdNMSDFXIXtkzvAWl5GDt8elWyJoQvsfQO4K/+H3yNjnP2bm0vamXbfxJ2+epWJj9wtoJ6GZtS55kpqZciFQc3gIbutAht1R/Rol8rw/8CYyLFh+uKHGttepcIFmZrwv161dA4NGaePreZS4tKV7YUgnRMa46VdVJPUdZ87iXPYZYIYABRX0E4oogSHN+S79B226xabQ7W8F6yYyKUdlWeebWsnk91tiGsz7v2l3Nx8WfEnTS1sPpCptbaK+8/5E978M=
+  on:
     tags: true
     branch: master
