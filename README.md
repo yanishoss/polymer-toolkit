@@ -11,14 +11,14 @@ Provides already:
 ## Install it
 ```shell
 # With npm
-npm intall --save polymer-toolkit
+npm install --save polymer-toolkit
 
 # With yarn
 yarn add -ED polymer-toolkit
 ```
 
 ## How to use ?
-```typescript
+```javascript
 import { register, ReduxLitElement } from "polymer-toolkit";
 import { createStore } from "redux";
 
@@ -37,7 +37,7 @@ const exampleStore = createStore(/*Put a reducer*/);
 class MyComponent extends ReduxLitElement {
     // Put the name of your component.
     // Could be a getter.
-    static displayName: string = "my-component";
+    static displayName = "my-component";
 
     // Put your store here.
     store = exampleStore;
@@ -45,7 +45,7 @@ class MyComponent extends ReduxLitElement {
     // Then put a mapStateToProps,
     // It assigns your store state to your component's props.
     // Same as in "react-redux".
-    mapStateToProps = state = {
+    mapStateToProps = state => {
         return {
             someProps: state.someState
         };
@@ -57,7 +57,7 @@ class MyComponent extends ReduxLitElement {
     mapDispatchToProps = dispatch => {
         return {
             // Inside your component, your can call it like this: this.addANumber(7);
-            addANumber: (n: number) => dispatch({
+            addANumber: (n) => dispatch({
                 type: ADD_A_NUMBER,
                 payload: n
             })
