@@ -45,7 +45,7 @@ class MyComponent extends ReduxLitElement {
     // Then put a mapStateToProps,
     // It assigns your store state to your component's props.
     // Same as in "react-redux".
-    mapStateToProps = state = {
+    mapStateToProps = state => {
         return {
             someProps: state.someState
         };
