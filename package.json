@@ -1,6 +1,6 @@
 {
   "name": "polymer-toolkit",
-  "version": "1.0.6-alpha-docs",
+  "version": "1.0.8",
   "description": "A toolkit for making Polymer simpler.",
   "main": "build/index.js",
   "repository": {
